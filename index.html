@@ -10,108 +10,55 @@
   <body>
     <div class="bg" aria-hidden="true"></div>
 
-    <header class="site-header">
-      <div class="container header-inner">
-        <a class="brand" href="#" aria-label="Candle Keep home">
-          <span class="logo" aria-hidden="true">
-            <span class="logo-flame"></span>
-            <span class="logo-body"></span>
+    <header class="nav">
+      <div class="nav-inner">
+        <a class="nav-brand" href="./index.html" aria-label="Candle Keep">
+          <span class="candle nav-icon" aria-hidden="true">
+            <span class="candle-flame"></span>
+            <span class="candle-body"></span>
           </span>
-          <span class="brand-text">
-            <span class="brand-name">Candle Keep</span>
-            <span class="brand-tagline">A calm place to keep your notes</span>
-          </span>
+          <span class="nav-title">Candle Keep</span>
         </a>
-        <nav class="header-actions" aria-label="Primary">
-          <a class="link" href="#">About</a>
-          <a class="link" href="#">Pricing</a>
-          <a class="link" href="#">Support</a>
+        <nav class="nav-tabs" aria-label="Navigation">
+          <a class="tab active" href="./index.html">Home</a>
+          <a class="tab" href="https://github.com" target="_blank" rel="noreferrer">GitHub</a>
         </nav>
       </div>
     </header>
 
-    <main class="container main">
-      <section class="hero" aria-label="Welcome">
-        <div class="hero-copy">
-          <h1>Light up your ideas.</h1>
-          <p class="subtitle">
-            Capture thoughts, organize pages, and keep everything within reach. This is a
-            simple landing page—no functionality wired up yet.
-          </p>
-          <div class="hero-badges" aria-label="Highlights">
-            <div class="badge">Minimal</div>
-            <div class="badge">Fast</div>
-            <div class="badge">Private</div>
-          </div>
+    <main class="simple">
+      <section class="simple-card" aria-label="Login">
+        <div class="candle" aria-hidden="true">
+          <span class="candle-flame"></span>
+          <span class="candle-body"></span>
         </div>
 
-        <aside class="card" aria-label="Login">
-          <div class="card-header">
-            <h2>Log in</h2>
-            <p class="muted">Enter your details to continue.</p>
-          </div>
+        <form class="simple-form" action="#" method="post">
+          <label class="field">
+            <span class="label">Username</span>
+            <input
+              type="text"
+              name="username"
+              placeholder="Username"
+              autocomplete="username"
+              inputmode="text"
+            />
+          </label>
 
-          <form class="form" action="#" method="post">
-            <label class="field">
-              <span class="label">Username</span>
-              <input
-                type="text"
-                name="username"
-                placeholder="e.g. antho"
-                autocomplete="username"
-                inputmode="text"
-              />
-            </label>
+          <label class="field">
+            <span class="label">Password</span>
+            <input
+              type="password"
+              name="password"
+              placeholder="Password"
+              autocomplete="current-password"
+            />
+          </label>
 
-            <label class="field">
-              <span class="label">Password</span>
-              <input
-                type="password"
-                name="password"
-                placeholder="••••••••"
-                autocomplete="current-password"
-              />
-            </label>
-
-            <button class="button" type="button" aria-disabled="true" title="UI only — not wired up yet">
-              Continue
-            </button>
-
-            <div class="form-footer">
-              <a class="small-link" href="#">Forgot password?</a>
-              <span class="divider" aria-hidden="true"></span>
-              <a class="small-link" href="#">Create account</a>
-            </div>
-          </form>
-        </aside>
-      </section>
-
-      <section class="features" aria-label="Features">
-        <div class="feature">
-          <h3>Simple by default</h3>
-          <p class="muted">A clean, calm UI that stays out of your way.</p>
-        </div>
-        <div class="feature">
-          <h3>Organize naturally</h3>
-          <p class="muted">Pages, tags, and search—when you’re ready to add them.</p>
-        </div>
-        <div class="feature">
-          <h3>Designed to scale</h3>
-          <p class="muted">This layout adapts beautifully from mobile to desktop.</p>
-        </div>
+          <a class="button" href="./home.html" aria-label="Login">Login</a>
+        </form>
       </section>
     </main>
-
-    <footer class="site-footer">
-      <div class="container footer-inner">
-        <small class="muted">© <span id="year">2025</span> Candle Keep. UI only.</small>
-        <div class="footer-links" aria-label="Footer">
-          <a class="small-link" href="#">Terms</a>
-          <a class="small-link" href="#">Privacy</a>
-          <a class="small-link" href="#">Contact</a>
-        </div>
-      </div>
-    </footer>
   </body>
 </html>
 

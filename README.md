@@ -1,15 +1,21 @@
-# Candle Keep (Landing Page)
+# Candle Keep
 
-Static landing page with a simple logo, marketing copy, and a login form UI (no functionality wired up yet).
+This repo currently contains:
+
+- A **static landing page** in the repo root (`index.html` + `styles.css`)
+- A **Next.js app** in `web/` (recommended path to Vercel + Supabase)
 
 ## Run / Preview
 
-- Open `index.html` in your browser, or
-- Use VS Code / Cursor “Live Server” extension for auto-refresh.
+- **Static page**: open `index.html` in your browser.
+- **Next.js app**:
+  - `cd web`
+  - `npm run dev`
+  - open `http://localhost:3000`
 
 ## Files
 
-- `index.html`: page markup
-- `styles.css`: styling (responsive)
+- `index.html` / `styles.css`: original static landing page
+- `web/`: Next.js scaffold (Vercel-friendly)
 
 

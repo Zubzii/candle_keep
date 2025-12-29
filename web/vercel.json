@@ -1,0 +1,13 @@
+{
+  "crons": [
+    {
+      "path": "/api/cron/github-discover?secret=@CRON_SECRET",
+      "schedule": "0 * * * *"
+    },
+    {
+      "path": "/api/cron/github-score?secret=@CRON_SECRET",
+      "schedule": "0 0 * * 1"
+    }
+  ]
+}
+

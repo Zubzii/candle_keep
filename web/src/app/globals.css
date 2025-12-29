@@ -33,8 +33,16 @@ body {
   font-family: var(--font);
   color: var(--text);
   background: radial-gradient(1200px 700px at 10% 10%, #1a1331 0%, rgba(26, 19, 49, 0) 55%),
-    radial-gradient(900px 600px at 90% 15%, rgba(255, 184, 107, 0.14) 0%, rgba(255, 184, 107, 0) 60%),
-    radial-gradient(900px 700px at 60% 110%, rgba(125, 211, 252, 0.12) 0%, rgba(125, 211, 252, 0) 55%),
+    radial-gradient(
+      900px 600px at 90% 15%,
+      rgba(255, 184, 107, 0.14) 0%,
+      rgba(255, 184, 107, 0) 60%
+    ),
+    radial-gradient(
+      900px 700px at 60% 110%,
+      rgba(125, 211, 252, 0.12) 0%,
+      rgba(125, 211, 252, 0) 55%
+    ),
     linear-gradient(180deg, var(--bg0), var(--bg1));
   overflow-x: hidden;
 }
@@ -288,8 +296,7 @@ a {
   position: fixed;
   inset: -60px;
   pointer-events: none;
-  background:
-    radial-gradient(600px 500px at 25% 20%, rgba(255, 184, 107, 0.16), transparent 65%),
+  background: radial-gradient(600px 500px at 25% 20%, rgba(255, 184, 107, 0.16), transparent 65%),
     radial-gradient(700px 550px at 75% 30%, rgba(125, 211, 252, 0.12), transparent 60%),
     radial-gradient(900px 650px at 50% 90%, rgba(167, 139, 250, 0.12), transparent 65%);
   filter: blur(12px);
@@ -578,5 +585,3 @@ input:focus {
     grid-template-columns: 1fr;
   }
 }
-
-
